@@ -1,6 +1,6 @@
-=================
+=====================
 Working with an IDE
-=================
+=====================
 
 Although not necessarily required, you can also configure an IDE in order to more comfortably work with ms-van3t.
 
