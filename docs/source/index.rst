@@ -36,13 +36,10 @@ Contents
 
    installation
    IDE
+   Simulation
    Applications
    Emulation
-   VehViz
-   Simulation
    Modules
-   Functions
-   Metrics
    Acknowledgements
 
 .. note::
