@@ -1,5 +1,5 @@
 ========================================
-ms-van3t web-based vehicle visualizer
+Web-based vehicle visualizer
 ========================================
 
 **Requirement:** if you want to use this module, Node.js should be installed (on Ubuntu/Debian you can install it with ``sudo apt install nodejs``).
