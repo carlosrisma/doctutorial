@@ -1,6 +1,6 @@
-================================================
-Vehicular application development with ms-van3t
-================================================
+====================================
+Vehicular application development
+====================================
 
 **ms-van3t**, thanks to its straightforward implementation, allows the user to generate arbitrarily complex scenarios with few steps. 
 In general, to run simulations with ms-van3t it is required to follow four steps as follows:
