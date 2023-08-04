@@ -11,6 +11,7 @@ Supported ETSI C-ITS messages
 -------------------------------
 
 *ms-van3t* currently supports the following ETSI C-ITS messages:
+
 - CAM
 - DENM
 - IVIM
