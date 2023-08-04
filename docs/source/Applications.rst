@@ -1,12 +1,15 @@
-============================================
-Sample V2I example and V2I/V2N applications
-============================================
+====================
+Sample Applications
+====================
 
 *ms-van3t* supports two stacks/communication technologies for V2I/V2N:
 
 - 802.11p, which communicates, for instance, with a Road Side Unit 
   (sample program name: ``v2i-areaSpeedAdvisor-80211p``)
 - LTE, for V2N communications (sample program name: ``v2i-areaSpeedAdvisor-lte``)
+
+Sample V2I example and V2I/V2N applications
+===========================================
 
 To run the sample V2I program, you can use the following commands:
 
@@ -70,6 +73,7 @@ List of the most important options:
 * ``--server-aggregate-output   [bool] if true, the server will print every second a report on the number of DENM sent and CAM received correctly``
 * ``--sumo-updates              [double] frequency of SUMO updates``
 * ``--csv-log                   [string] prefix of the CSV log files where to save the disaggregated data coming from the CAMs received by the server and the DENMs received by the vehicles (the user can then use this sample application to build more complex logging mechanisms and/or log additional data coming from the server and/or the vehicles)``
+
 
 Sample V2V example and V2V applications
 =======================================
