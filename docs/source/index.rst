@@ -7,9 +7,26 @@ Welcome to ms-van3t's documentation!
 
 It has been tested with SUMO v1.6.0, v1.7.0, v1.8.0, v1.12.0, v1.18.0 on Ubuntu 20.04 and 22.04. Back compatibility **is not** ensured with new versions of TraCI.
 
-.. note::
+Supported ETSI C-ITS messages
+-------------------------------
 
-   This project is under active development.
+*ms-van3t* currently supports the following ETSI C-ITS messages:
+- CAM
+- DENM
+- IVIM
+- CPM
+
+Supported access technologies
+-------------------------------
+
+*ms-van3t* currently supports state-of-the-art models for the following access technologies:
+
+- IEEE 802.11p
+- 3GPP LTE
+- 3GPP Release 14 LTE-V2X
+- 3GPP Release 16 5G NR-V2X
+
+.. image:: architecture.png
 
 Contents
 --------
@@ -27,3 +44,6 @@ Contents
    Metrics
    Acknowledgements
 
+.. note::
+
+   This project is under active development.
