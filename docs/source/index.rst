@@ -17,4 +17,13 @@ Contents
 .. toctree::
 
    installation
+   IDE
+   Applications
+   Emulation
+   VehViz
+   Simulation
+   Modules
+   Functions
+   Metrics
+   Acknowledgements
 
