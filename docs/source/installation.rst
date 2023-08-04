@@ -66,9 +66,14 @@ If this is **not** the first time you install ns-3.
 Configuring and Building ns3
 ============================
 
-Configure `ns3` to build the framework with `<ns3-folder>./ns3 configure --build-profile=optimized --enable-examples --enable-tests --disable-python (add here what you want to enable)"` - The usage of the optimized profile allows to speed up the simulation time. This command should be launched from inside the `ns-3-dev` folder.
+Configure `ns3` to build the framework with:
+.. code-block:: bash
 
-Important: If you are compiling ms-van3t on Ubuntu 22.04 LTS or later, you need to specify, when calling `./ns3 configure`, also the `--disable-werror` flag
+    `<ns3-folder>./ns3 configure --build-profile=optimized --enable-examples --enable-tests --disable-python (add here what you want to enable)`
+
+The usage of the optimized profile allows to speed up the simulation time. This command should be launched from inside the `ns-3-dev` folder.
+
+Important: If you are compiling ms-van3t on Ubuntu 22.04 LTS or later, you need to specify, when calling `./ns3 configure`, also the ``--disable-werror`` flag.
 
 Build ns3:
 
@@ -77,14 +82,12 @@ Build ns3:
    ./ns3 build
 
 Important Notes
-===============
+---------------
 
-`src/automotive/` contains all the application related files and all the source code implementing the ETSI ITS-G5 stack for vehicular communications. Inside `sumo_files_v2v_map` you can find the SUMO map and trace for the V2V sample application, while inside `sumo_files_v2i_map` you can find the SUMO map and trace for the V2I sample application. Similarly you can find the SUMO map and trace for the Traffic Manager sample application inside `sumo_files_v2i_TM_map` and the ones for the Emergency Vehicle Warning inside `sumo_files_v2i_EVW_map`
+``src/automotive/`` contains all the application related files and all the source code implementing the ETSI ITS-G5 stack for vehicular communications. Inside `sumo_files_v2v_map` you can find the SUMO map and trace for the V2V sample application, while inside `sumo_files_v2i_map` you can find the SUMO map and trace for the V2I sample application. Similarly you can find the SUMO map and trace for the Traffic Manager sample application inside `sumo_files_v2i_TM_map` and the ones for the Emergency Vehicle Warning inside `sumo_files_v2i_EVW_map`
 
-`src/traci/` and `src/traci-applications/` contain instead all the logic to link ns-3 and SUMO. 
+``src/traci/`` and `src/traci-applications/` contain instead all the logic to link ns-3 and SUMO. 
 
-`src/cv2x/` contains the model for C-V2X in transmission mode 4.
+``src/cv2x/`` contains the model for C-V2X in transmission mode 4.
 
-The user is also encouraged to use the `sumo_files_v2v_map` and `sumo_files_v2i_map` folders to save there the SUMO-related files for his/her own applications.
-
-The version of CAM and DENM messages (v1 or v2) can be easily switched by relying on the `switch_ETSI_version.sh` script. This script relies on the `ns-3-dev/src/automotive/model/ASN1/currmode.txt` file. Please **never** modify it manually or delete it!
+The user is also encouraged to use the ``sumo_files_v2v_map`` and ``sumo_files_v2i_map`` folders to save there the SUMO-related files for their own applications.
