@@ -9,12 +9,18 @@ Automotive module
 The automotive module is the main module of **ms-van3t** containing all the sample applications, ETSI C-ITS sub-modules, and additional auxiliary sub-modules, all listed below: 
 
 - Facilities layer
-  - Cooperative Awareness basic service (CABasicService)
-  - Decentralized Environmental Notification basic service (DENBasicService)
-  - Infrastructure to Vehicle Information basic service (IVIBasicService)
-  - Collective Perception basic service (CPBasicService)
-  - Vehicle Data Provider (VDP)
-  - Local Dynamic Map (LDM)
+  
+    - Cooperative Awareness basic service (CABasicService)
+    
+    - Decentralized Environmental Notification basic service (DENBasicService)
+  
+    - Infrastructure to Vehicle Information basic service (IVIBasicService)
+  
+    - Collective Perception basic service (CPBasicService)
+  
+    - Vehicle Data Provider (VDP)
+      
+    - Local Dynamic Map (LDM)
   
 - Networking and Transport layers
   - Basic Transport Protocol (BTP)
