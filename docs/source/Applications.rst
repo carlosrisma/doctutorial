@@ -38,7 +38,7 @@ The RSU disseminates a DENM every second in the area mentioned before, and conti
 **LTE application logic**
 ------------------------------
 
-The map is divided into two areas: the area in the middle, where the maximum speed is 25km/h and an outer area, where the speed limit is set to 75km/h. In this case, DENMs cannot be transmitted using merely BTP and GeoNetworking, but they have to rely on UDP and IPv4, since the server is located in a remote host behind the eNB and EPC. The server checks whenever a transition between the two areas is performed by a vehicle, and, when it happens, it sends it a _unicast_ DENM message to tell it to slow-down (or to let it speed-up again).
+The map is divided into two areas: the area in the middle, where the maximum speed is 25km/h and an outer area, where the speed limit is set to 75km/h. In this case, DENMs cannot be transmitted using merely BTP and GeoNetworking, but they have to rely on UDP and IPv4, since the server is located in a remote host behind the eNB and EPC. The server checks whenever a transition between the two areas is performed by a vehicle, and, when it happens, it sends it a *unicast* DENM message to tell it to slow-down (or to let it speed-up again).
 
 .. image:: v2i-lte.png
 
@@ -55,15 +55,21 @@ The user *IS NOT* expected to modify the code inside the "Facilities", "BTP" and
 **Important**
 --------------
 
+If using the LTE version in this very simple toy case, it is possible to connect at most 23 UEs to the enB (due to the LENA framework currently implemented features). You can avoid this problem by using the option `--ns3::LteEnbRrc::SrsPeriodicity=[value]"` where [value]=0, 2, 5, 10, 20, 40, 80, 160, 320. In this way you can add more UEs. Example: 
+
+.. code-block:: bash
+
+  ./ns3 run "v2i-areaSpeedAdvisory-lte --ns3::LteEnbRrc::SrsPeriodicity=160"
+
 List of the most important options:
 -----------------------------------
 
-* `` --realtime                  [bool]`` decide to run the simulation using the realtime scheduler or not
-* `` --sim-time                  [double]`` simulation time
-* `` --sumo-gui                  [bool]`` decide to show sumo-gui or not
-* `` --server-aggregate-output   [bool]`` if true, the server will print every second a report on the number of DENM sent and CAM received correctly
-* `` --sumo-updates              [double]`` frequency of SUMO updates
-* `` --csv-log                   [string]`` prefix of the CSV log files where to save the disaggregated data coming from the CAMs received by the server and the DENMs received by the vehicles
+* ``--realtime``                  [bool] decide to run the simulation using the realtime scheduler or not
+* ``--sim-time``                  [double] simulation time
+* ``--sumo-gui``                  [bool] decide to show sumo-gui or not
+* ``--server-aggregate-output``   [bool] if true, the server will print every second a report on the number of DENM sent and CAM received correctly
+* ``--sumo-updates``              [double] frequency of SUMO updates
+* ``--csv-log``                   [string] prefix of the CSV log files where to save the disaggregated data coming from the CAMs received by the server and the DENMs received by the vehicles
 
 Sample V2V example and V2V applications
 =======================================
