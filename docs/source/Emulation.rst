@@ -46,7 +46,7 @@ UDP mode
 
 In the default emulation mode, messages will be sent, through the specified interface, as broadcast packets encapsulated inside BTP and GeoNetworking.
 
-The user can also specify, however, a _UDP mode_, enabling the transmission of messages to an external UDP server. In this case, the ETSI V2X messages (i.e. CAM, DENM) will be encapsulated inside BTP --> GeoNetworking --> UDP --> IPv4, and sent to a host with a specified IPv4 and port.
+The user can also specify, however, a UDP mode, enabling the transmission of messages to an external UDP server. In this case, the ETSI V2X messages (i.e. CAM, DENM) will be encapsulated inside BTP --> GeoNetworking --> UDP --> IPv4, and sent to a host with a specified IPv4 and port.
 
 *Any host is fine, but the following limitations apply:*
 
@@ -59,11 +59,11 @@ Screenshots
 
 The following screenshot shows a Wireshark capture of the messages sent by the emulator application, when operating in normal mode and selecting the `ens33` interface (e.g. `./ns3 run "v2x-emulator --interface=ens33"`)
 
-.. image:: img/v2x-emulator-normal-mode.png
+.. image:: v2x-emulator-normal-mode.png
 
 The following screenshot shows a Wireshark capture of the messages sent by the emulator application, when operating in UDP mode, targeting a UDP server at 192.168.1.124/24, port 20000, and transmitting over the `ens33` interface (e.g. `./ns3 run "v2x-emulator --udp=192.168.1.124:20000 --interface=ens33 netmask=255.255.255.0 gateway=192.168.1.1"`)
 
-.. image:: img/v2x-emulator-udp-mode.png
+.. image:: v2x-emulator-udp-mode.png
 
 List of the most important options:
 --------------------------------------
@@ -71,4 +71,10 @@ List of the most important options:
 - `--sim-time                   [double] total emulation/simulation time`
 - `--sumo-gui                   [bool] decide to show sumo-gui or not`
 - `--sumo-updates               [double] frequency of SUMO updates`
-- `--send-cam                   [
+- `--send-cam                   [bool] enable vehicles to send CAMs`
+- `--send-denm                  [bool] enable vehicles to send DENMs`
+- `--interface                  [string] Name of the physical interface to send(/receive) V2X messages to(/from)`
+- `--udp                		   [string] To enable UDP mode and specify UDP port and IP address where the V2X messages are redirected (format: <IP>:<port>)`
+- `--gateway                    [string] To specify the gateway at which the UDP/IP packets will be sent`
+- `--subnet                     [string] To specify the subnet which will  be used to assign the IP addresses of emulated nodes (the .1 address is automatically excluded)`
+- `--netmask                     [string] To specify the netmask of the network`
