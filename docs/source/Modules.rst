@@ -28,7 +28,7 @@ The automotive module is the main module of **ms-van3t** containing all the samp
 
 GPS-tc module
 =============
-The *gps-tc* provides classes and functions to leverage offline-collected GNSS traces. This module allows realistic positioning data rather than artificial traces created with SUMO.
+The *gps-tc* module provides classes and functions to leverage offline-collected GNSS traces. This module allows realistic positioning data rather than artificial traces created with SUMO.
 
 Vehicle Visualizer module
 =========================
