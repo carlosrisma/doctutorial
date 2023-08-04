@@ -67,9 +67,10 @@ Configuring and Building ns3
 ============================
 
 Configure `ns3` to build the framework with:
+
 .. code-block:: bash
 
-    `<ns3-folder>./ns3 configure --build-profile=optimized --enable-examples --enable-tests --disable-python (add here what you want to enable)`
+    <ns3-folder>./ns3 configure --build-profile=optimized --enable-examples --enable-tests --disable-python
 
 The usage of the optimized profile allows to speed up the simulation time. This command should be launched from inside the `ns-3-dev` folder.
 
