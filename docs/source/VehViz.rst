@@ -23,11 +23,11 @@ three layer changes are performed, may require around 150/200 tile requests (we 
 In general, you should disable the vehicle visualizer when doing long batches of simulations.
 
 If you do not own a Mapbox token (i.e. the ``mapbox_token`` file is empty), the visualizer will work in any case, with the following limitations:
-- You **must** make an **occasional** use of the visualizer (i.e. **no** heavy usage allowed, **no** derivative apps can be developed
+* You **must** make an **occasional** use of the visualizer (i.e. **no** heavy usage allowed, **no** derivative apps can be developed
   starting from the visualizer). Not making an occasional usage will conflict with the `Tile Usage Policy <https://operations.osmfoundation.org/policies/tiles/>`_ of
   OpenStreetMap, which is not considered acceptable. So, you **must disable** the vehicle-visualizer
   when doing batches of simulations to gather some results. **You are responsible for this!**
-- Only one map layer (standard streets view from OpenStreetMap) will be available for use  
+* Only one map layer (standard streets view from OpenStreetMap) will be available for use  
 
 .. image:: veh_viz.png
 
