@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'ms-van3t'
+copyright = '2023, ms-van3t-devs'
+author = 'Marco Malinverno,  Francesco Raviglione, Carlos M. Risma Carletti'
 
 release = '0.1'
 version = '0.1.0'
