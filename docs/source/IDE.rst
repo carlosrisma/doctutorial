@@ -4,7 +4,7 @@ Working with an IDE
 
 Although not necessarily required, you can also configure an IDE in order to more comfortably work with ms-van3t.
 
-The suggested IDE, which has also been used for the development of ms-van3t, is _QtCreator_ .
+The suggested IDE, which has also been used for the development of ms-van3t, is *QtCreator*.
 
 You can find all the instructions for setting up QtCreator with ns-3 (and the same applies to ms-van3t, as it is based on ns-3) on the `official ns-3 Wiki <https://www.nsnam.org/wiki/HOWTO_configure_QtCreator_with_ns-3>`_.
 
