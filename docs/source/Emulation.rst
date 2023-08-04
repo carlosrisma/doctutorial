@@ -68,13 +68,13 @@ The following screenshot shows a Wireshark capture of the messages sent by the e
 List of the most important options:
 --------------------------------------
 
-- `--sim-time                   [double] total emulation/simulation time`
-- `--sumo-gui                   [bool] decide to show sumo-gui or not`
-- `--sumo-updates               [double] frequency of SUMO updates`
-- `--send-cam                   [bool] enable vehicles to send CAMs`
-- `--send-denm                  [bool] enable vehicles to send DENMs`
-- `--interface                  [string] Name of the physical interface to send(/receive) V2X messages to(/from)`
-- `--udp                		   [string] To enable UDP mode and specify UDP port and IP address where the V2X messages are redirected (format: <IP>:<port>)`
-- `--gateway                    [string] To specify the gateway at which the UDP/IP packets will be sent`
-- `--subnet                     [string] To specify the subnet which will  be used to assign the IP addresses of emulated nodes (the .1 address is automatically excluded)`
-- `--netmask                     [string] To specify the netmask of the network`
+- ``--sim-time                   [double] total emulation/simulation time``
+- ``--sumo-gui                   [bool] decide to show sumo-gui or not``
+- ``--sumo-updates               [double] frequency of SUMO updates``
+- ``--send-cam                   [bool] enable vehicles to send CAMs``
+- ``--send-denm                  [bool] enable vehicles to send DENMs``
+- ``--interface                  [string] Name of the physical interface to send(/receive) V2X messages to(/from)``
+- ``--udp                		   [string] To enable UDP mode and specify UDP port and IP address where the V2X messages are redirected (format: <IP>:<port>)``
+- ``--gateway                    [string] To specify the gateway at which the UDP/IP packets will be sent``
+- ``--subnet                     [string] To specify the subnet which will  be used to assign the IP addresses of emulated nodes (the .1 address is automatically excluded)``
+- ``--netmask                     [string] To specify the netmask of the network``
