@@ -64,13 +64,12 @@ If using the LTE version in this very simple toy case, it is possible to connect
 List of the most important options:
 -----------------------------------
 
-.. code-block:: bash
-  --realtime                   [bool] decide to run the simulation using the realtime scheduler or not
-  --sim-time                   [double] simulation time
-  --sumo-gui                   [bool] decide to show sumo-gui or not
-  --server-aggregate-output    [bool] if true, the server will print every second a report on the number of DENM sent and CAM received correctly
-  --sumo-updates               [double] frequency of SUMO updates
-  --csv-log                    [string] prefix of the CSV log files where to save the disaggregated data coming from the CAMs received by the server and the DENMs received by the vehicles
+* ``--realtime                  [bool] decide to run the simulation using the realtime scheduler or not``
+* ``--sim-time                  [double] simulation time``
+* ``--sumo-gui                  [bool] decide to show sumo-gui or not``
+* ``--server-aggregate-output   [bool] if true, the server will print every second a report on the number of DENM sent and CAM received correctly``
+* ``--sumo-updates              [double] frequency of SUMO updates``
+* ``--csv-log                   [string] prefix of the CSV log files where to save the disaggregated data coming from the CAMs received by the server and the DENMs received by the vehicles (the user can then use this sample application to build more complex logging mechanisms and/or log additional data coming from the server and/or the vehicles)``
 
 Sample V2V example and V2V applications
 =======================================
