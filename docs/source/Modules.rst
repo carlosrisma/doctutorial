@@ -10,17 +10,17 @@ The automotive module is the main module of **ms-van3t** containing all the samp
 
 - Facilities layer
   
-    - Cooperative Awareness basic service (CABasicService)
+  - Cooperative Awareness basic service (CABasicService)
     
-    - Decentralized Environmental Notification basic service (DENBasicService)
-  
-    - Infrastructure to Vehicle Information basic service (IVIBasicService)
-  
-    - Collective Perception basic service (CPBasicService)
-  
-    - Vehicle Data Provider (VDP)
+  - Decentralized Environmental Notification basic service (DENBasicService)
       
-    - Local Dynamic Map (LDM)
+  - Infrastructure to Vehicle Information basic service (IVIBasicService)
+  
+  - Collective Perception basic service (CPBasicService)
+  
+  - Vehicle Data Provider (VDP)
+      
+  - Local Dynamic Map (LDM)
   
 - Networking and Transport layers
   - Basic Transport Protocol (BTP)
