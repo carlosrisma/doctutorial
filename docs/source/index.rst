@@ -17,5 +17,5 @@ Contents
 
 .. toctree::
 
-   Installation
+   installation
 
