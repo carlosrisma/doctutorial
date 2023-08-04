@@ -13,6 +13,4 @@ In general, to run simulations with ms-van3t it is required to follow four steps
 
 4. **Configure additional utilities and modules.** Optionally, the user can configure the usage of additional modules, such as the ``MetricSupervisor`` to seamlessly gather average latency and PRR metrics. The latter should be configured in the same file that is also used to set up the access technology parameters.
 
-After creating the simulation files, they can be compiled, executed and debugged with ``ns3``.
-
-Although fundamental, the aforementioned steps require the user to define non-trivial aspects and, most importantly, to work with different modules of the framework. Thus, to improve the tool usability, we have developed several applications aimed at showcasing the most important functionalities of ms-van3t. These applications, shortly described in the next sections, can be used as a baseline for developers, and exemplify the main features of ms-van3t. 
+After creating the simulation files, they can be compiled, executed and debugged with ns3.
