@@ -1,5 +1,5 @@
 Welcome to ms-van3t's documentation!
-===================================
+====================================
 
 ![](img/MS-VAN3T_logo-V2_small.png)
 
