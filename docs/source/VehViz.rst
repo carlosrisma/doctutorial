@@ -6,9 +6,10 @@ ms-van3t web-based vehicle visualizer
 
 ``ms-van3t`` also comes with a web-based vehicle visualizer, able to display the vehicles travelling
 during the simulation on a map, rendered directly inside the user's browser.
-
 It can be particularly useful when working with GPS Traces (see the ``gps-tc`` module), which are not
 coupled with a GUI (as opposed to SUMO).
+
+.. image:: veh_viz.png
 
 If you want to fully exploit its potentiality, you need a Mapbox token, as the visualizer
 relies on Mapbox to draw the street, hybrid and satellite map layers.
@@ -21,14 +22,11 @@ and getting a token to be used here. In general, we found out that a normal simu
 three layer changes are performed, may require around 150/200 tile requests (we advise you to check often the tile request count on the Mapbox website, when you use your token).
 
 In general, you should disable the vehicle visualizer when doing long batches of simulations.
-
 If you do not own a Mapbox token (i.e. the ``mapbox_token`` file is empty), the visualizer will work in any case, with the following limitations:
 
 - You **must** make an **occasional** use of the visualizer (i.e. **no** heavy usage allowed, **no** derivative apps can be developed starting from the visualizer). Not making an occasional usage will conflict with the `Tile Usage Policy <https://operations.osmfoundation.org/policies/tiles/>`_ of OpenStreetMap, which is not considered acceptable. So, you **must disable** the vehicle-visualizer when doing batches of simulations to gather some results. **You are responsible for this!**
 
 - Only one map layer (standard streets view from OpenStreetMap) will be available for use  
-
-.. image:: veh_viz.png
 
 In order to use the visualizer in your application, you need to add, in the main function (i.e. ``int main()``),
 the following code, which creates a new ``vehicleVisualizer`` object::
