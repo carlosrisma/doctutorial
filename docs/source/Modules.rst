@@ -23,13 +23,17 @@ The automotive module is the main module of **ms-van3t** containing all the samp
   - Local Dynamic Map (LDM)
   
 - Networking and Transport layers
+  
   - Basic Transport Protocol (BTP)
+  
   - GeoNetworking (GeoNet) 
 
 - Measurements 
+  
   - Packet Reception Ratio supervisor (PRRsupervisor)
 
 - Utilities
+  
   - SUMO sensor
 
 GPS-tc module
