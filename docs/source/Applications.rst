@@ -116,8 +116,8 @@ The SUMO map also embeds some re-routers allowing the vehicles to continuously t
 List of the most important options:
 -----------------------------------
 
-* `` --realtime                   [bool]`` decide to run the simulation using the realtime scheduler or not
-* `` --sim-time                   [double]`` simulation time
-* `` --sumo-gui                   [bool]`` decide to show sumo-gui or not
-* `` --sumo-updates               [double]`` frequency of SUMO updates
-* `` --csv-log:                   [string]`` prefix of the CSV log files where to save CAMs and DENMs disaggregated data and statistics
+* `` --realtime                   [bool] decide to run the simulation using the realtime scheduler or not``
+* `` --sim-time                   [double] simulation time``
+* `` --sumo-gui                   [bool] decide to show sumo-gui or not``
+* `` --sumo-updates               [double] frequency of SUMO updates``
+* `` --csv-log:                   [string] prefix of the CSV log files where to save CAMs and DENMs disaggregated data and statistics``
