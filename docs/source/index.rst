@@ -24,7 +24,7 @@ Supported access technologies
 
 - IEEE 802.11p
 - 3GPP LTE
-- 3GPP Release 14 LTE-V2X
+- `3GPP Release 14 LTE-V2X <https://github.com/FabianEckermann/ns-3_c-v2x>`_
 - 3GPP Release 16 5G NR-V2X
 
 .. image:: architecture.png
