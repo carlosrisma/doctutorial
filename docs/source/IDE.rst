@@ -29,8 +29,8 @@ Not installing `libclang-common-8-dev` may result in QtCreator wrongly highlight
 
 CLion
 ===========
-If using ms-van3t in Windows with WSL refer to this guide --> https://gabrielcarvfer.github.io/NS3/installation/clion
-For Ubuntu, you may the following steps:
+If using ms-van3t in Windows with WSL refer to this guide --> https://gabrielcarvfer.github.io/NS3/installation/clion .
+For Ubuntu, you may follow these steps:
 
 1) After opening CLion, go to *File > Open..* and select the path/to/ms-van3t/ns-3-dev/ like in the picture.
 
